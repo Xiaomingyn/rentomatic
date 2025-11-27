@@ -7,8 +7,10 @@ requires-python = ">=3.13"
 dependencies = [
     "flake8>=7.3.0",
     "flask>=3.1.2",
+    "psycopg2>=2.9.11",
     "punch-py>=2.0.0",
     "sphinx>=8.2.3",
+    "sqlalchemy>=2.0.44",
     "watchdog>=6.0.0",
     "wheel>=0.45.1",
 ]
