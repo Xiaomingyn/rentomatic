@@ -3,6 +3,8 @@ import pytest
 
 from rentomatic.repository.postgres_objects import Base, Room
 
+# Note: while SQLAlchemy works through a session, PyMongo creates a client and uses it directly
+
 @pytest.fixture(scope="session")
 def pg_session_empty(app_configuration):
     conn_str = "postgresql+psycopg2://{}:{}@{}:{}/{}".format(
