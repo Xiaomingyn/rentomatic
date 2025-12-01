@@ -7,6 +7,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
       - "${POSTGRES_PORT}:5432"   
+    volumes:
+      - pgdata:/var/lib/postgresql/18/docker     
   web:
     build:
       context: ${PWD}

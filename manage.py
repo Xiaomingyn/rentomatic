@@ -108,6 +108,7 @@ def test(args):
     cmdline = [
         "pytest",
         "-svv",
+        "--cov=rentomatic",
         "--cov=application",
         "--cov-report=term-missing",
     ]

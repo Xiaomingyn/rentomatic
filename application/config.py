@@ -6,8 +6,7 @@ class Config(object):
     """Base configuration"""
 
 class ProductionConfig(Config):
-    """Production configuration"""
-    PRODUCTION = True 
+    """Production configuration""" 
 
 class DevelopmentConfig(Config):
     """Development configuration""" 
